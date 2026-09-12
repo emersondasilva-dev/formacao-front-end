@@ -2,21 +2,21 @@
 
 // Questão 01: Crie uma função maiorDeTres(a, b, c) que retorne o maior número.
 
-// const a = Number(prompt("Digite o primeiro número: "));
-// const b = Number(prompt("Digite o segundo número: "));
-// const c = Number(prompt("Digite o terceiro número: "));
+const a = Number(prompt("Digite o primeiro número: "));
+const b = Number(prompt("Digite o segundo número: "));
+const c = Number(prompt("Digite o terceiro número: "));
 
-// function maiorDeTres(a, b, c) {
-//     if (a > b && a > c) {
-//         return a;
-//     } else if (b > a && b > c) {
-//         return b;
-//     } else {
-//         return c;
-//     }
-// }
+function maiorDeTres(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
 
-// console.log(`O maior número é: ${maiorDeTres(a, b, c)}`);
+console.log(`O maior número é: ${maiorDeTres(a, b, c)}`);
 
 // Questão 02: Crie uma função verificarAprovacao(nota):
 
@@ -54,16 +54,12 @@
 //     switch (true) {
 //         case imc < 18.5:
 //             return "Abaixo do peso";
-//             break;
 //         case imc >= 18.5 && imc <= 24.9:
 //             return "Peso normal";
-//             break;
 //         case imc >= 25 && imc <= 29.9:
 //             return "Sobrepeso";
-//             break;
 //         case imc >= 30:
 //             return "Obesidade";
-//             break;
 //         default:
 //             return "Valor inválido";
 //     }
@@ -93,31 +89,31 @@
 // *
 // /
 
-const a = Number(prompt("Digite o primeiro número: "));
-const b = Number(prompt("Digite o segundo número: "));
-const operador = prompt("Digite o operador (+, -, *, /): ");
+// const a = Number(prompt("Digite o primeiro número: "));
+// const b = Number(prompt("Digite o segundo número: "));
+// const operador = prompt("Digite o operador (+, -, *, /): ");
 
-function calcular(a, b, operador) {
-    switch (operador) {
-        case "+":
-            return a + b;
-            break;
-        case "-":
-            return a - b;
-            break;
-        case "*":
-            return a * b;
-            break;
-        case "/":
-            if (b !== 0) {
-                return a / b;
-            } else {
-                return "Erro: Divisão por zero não é permitida.";
-            }
-        break;
-        default:
-            return "Operador inválido.";
-    }
-}
+// function calcular(a, b, operador) {
+//     switch (operador) {
+//         case "+":
+//             return a + b;
+//             break;
+//         case "-":
+//             return a - b;
+//             break;
+//         case "*":
+//             return a * b;
+//             break;
+//         case "/":
+//             if (b !== 0) {
+//                 return a / b;
+//             } else {
+//                 return "Erro: Divisão por zero não é permitida.";
+//             }
+//         break;
+//         default:
+//             return "Operador inválido.";
+//     }
+// }
 
-console.log(`O resultado da operação é: ${calcular(a, b, operador)}`);
+// console.log(`O resultado da operação é: ${calcular(a, b, operador)}`);
