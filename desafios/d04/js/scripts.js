@@ -97,20 +97,16 @@ console.log(`O maior número é: ${maiorDeTres(a, b, c)}`);
 //     switch (operador) {
 //         case "+":
 //             return a + b;
-//             break;
 //         case "-":
 //             return a - b;
-//             break;
 //         case "*":
 //             return a * b;
-//             break;
 //         case "/":
 //             if (b !== 0) {
 //                 return a / b;
 //             } else {
 //                 return "Erro: Divisão por zero não é permitida.";
 //             }
-//         break;
 //         default:
 //             return "Operador inválido.";
 //     }
